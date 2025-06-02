@@ -8,6 +8,11 @@ import uuid
 from PIL import Image
 from io import BytesIO
 
+from flask_cors import CORS
+app = Flask(__name__)
+CORS(app)
+
+
 load_dotenv()
 app = Flask(__name__)
 Gemini_Api_Key = os.getenv("Gemini_Api_Key")
