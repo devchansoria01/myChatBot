@@ -7,3 +7,4 @@ google-auth
 requests
 gunicorn
 flask-cors
+Pillow
