@@ -23,7 +23,7 @@ genai.configure(api_key=Gemini_Api_Key)
 
 @app.route("/")
 def home():
-    return render_template("chatPlusImage.html")
+    return render_template("index.html")
 
 @app.route("/chat", methods=["POST"])
 def chat():
