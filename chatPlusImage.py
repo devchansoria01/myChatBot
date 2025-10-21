@@ -21,6 +21,10 @@ HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")  # Optional, can work wit
 # Configure Gemini
 genai.configure(api_key=Gemini_Api_Key)
 
+@app.route('/ping')
+def ping():
+    return {"status": "alive"}, 200
+
 @app.route("/")
 def home():
     return render_template("index.html")
